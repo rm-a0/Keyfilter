@@ -60,8 +60,8 @@ int main(int argc, char *argv[])
 
     if (isatty(STDIN_FILENO))
     {
-	printf("No file specified \n");
-	return 1;
+	    fprintf(stderr, "No file specified \n");
+	    return 1;
     }
 
     if(argc < 2)
@@ -92,7 +92,7 @@ int main(int argc, char *argv[])
     {
         if ((searchInput[i] > 'Z' || searchInput[i] < 'A') && searchInput[i] != 0 && searchInput[i] != ' ')
         {
-            printf("Incorrect input\n");
+            fprintf(stderr, "Incorrect input\n");
             return 1;
         }
     }
