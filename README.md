@@ -3,9 +3,10 @@ This program is designed to emulate virtual keybord that reads input from a user
 
 # How to use
 Compile the program using:
-
-_gcc -std=c11 -Wall -Wextra -Werror keyfilter.c -o keyfilter_
-
+<pre>
+gcc -std=c11 -Wall -Wextra -Werror keyfilter.c -o keyfilter
+</pre>
 Run the program using:
-
-_$ ./keyfilter input < file.txt_
+<pre>
+$ ./keyfilter input < file.txt
+</pre>
